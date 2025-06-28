@@ -1,0 +1,24 @@
+# Archivos de compilación
+/bin/
+/obj/
+/publish/
+
+# Configuraciones de usuario de Visual Studio
+*.user
+*.suo
+*.userprefs
+
+# Archivos de VSCode y devcontainer
+.vscode/
+devcontainer.json
+.devcontainer/
+
+# Configs del entorno de desarrollo de GitHub Codespaces
+*.code-workspace
+*.swp
+.DS_Store
+Thumbs.db
+
+# Archivos de juego generados
+config.json
+!config.example.json

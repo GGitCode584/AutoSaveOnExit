@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Target para SMAPI 4.0+ y SDV 1.6+ -->
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>AutoSaveOnExit</AssemblyName>
+    <OutputPath>bin\net48\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo> <!-- SMAPI maneja su propio manifest -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Eliminamos Program.cs si lo hubiese generado la plantilla -->
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <HintPath>lib\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="StardewModdingAPI">
+      <HintPath>lib\StardewModdingAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="StardewValley">
+      <HintPath>lib\StardewValley.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Archivos que deben copiarse al output -->
+    <None Include="config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="manifest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

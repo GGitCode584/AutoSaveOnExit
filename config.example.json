@@ -1,0 +1,9 @@
+{
+  "EnableAutoSave": true,                    // Activa el mod completamente
+  "SaveKey": "F5",                           // Tecla para guardar manualmente y salir al menú
+  "SaveDelay": 500,                          // Retraso antes de guardar (en milisegundos)
+  "ShowSaveMessage": true,                   // Muestra mensaje HUD y sonido al guardar
+  "IncludeTimeStampInLog": false,            // Agrega hora exacta en los registros de SMAPI
+  "SaveOnlyOnCertainDays": false,            // Limita el guardado a los días definidos abajo
+  "AllowedDays": [1, 7]                      // Solo guardar el día 1 y 7 del mes si la opción anterior está activada
+}
