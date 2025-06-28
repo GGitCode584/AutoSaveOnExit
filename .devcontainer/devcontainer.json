@@ -1,0 +1,19 @@
+{
+  "name": "AutoSaveOnExit DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {},
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-vscode.cpptools",
+        "editorconfig.editorconfig"
+      ]
+    }
+  },
+  "postCreateCommand": "apt update && apt install -y wine mono-complete msbuild git",
+  "remoteUser": "vscode"
+}
