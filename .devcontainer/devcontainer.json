@@ -1,7 +1,12 @@
 {
   "name": "AutoSaveOnExit DevContainer",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "features": {},
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": {
+      "version": "4.8",
+      "sdk": true
+    }
+  },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
