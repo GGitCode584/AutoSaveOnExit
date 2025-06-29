@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
 [![Downloads](https://img.shields.io/github/downloads/GGitCode584/AutoSaveOnExit/total.svg)](https://github.com/GGitCode584/AutoSaveOnExit/releases)
 
-**AutoSaveOnExit** guarda tu partida automáticamente al volver al menú principal. También podés guardar manualmente presionando la tecla `F5` (configurable). Ideal para quienes se olvidan de guardar antes de salir 😄
+**AutoSaveOnExit** guarda tu partida automáticamente al volver al menú principal. También podés guardar manualmente presionando la tecla `F5` (configurable). Muy útil ¿No? 😄
 
 ---
 
