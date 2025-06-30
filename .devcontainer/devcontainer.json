@@ -1,21 +1,17 @@
 {
-  "name": "AutoSaveOnExit DevContainer",
+  "name": "AutoSaveOnExit - Mono DevContainer",
   "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "features": {
-    "ghcr.io/devcontainers/features/dotnet:1": {
-      "version": "4.8",
-      "sdk": true
-    }
-  },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
+  "features": {},
+  "postCreateCommand": "apt update && apt install -y mono-complete msbuild git",
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-dotnettools.csharp"
       ]
     }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
   },
   "remoteUser": "vscode"
 }
