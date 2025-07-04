@@ -2,7 +2,6 @@ using System;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
-using StardewValley.Save; // para SaveGame
 
 namespace AutoSaveOnExit
 {
@@ -78,7 +77,8 @@ namespace AutoSaveOnExit
             Monitor.Log("⏳ Fundiendo pantalla para salir al título…", LogLevel.Debug);
             if (!Game1.fadeToBlack)
                 Game1.fadeToBlack = true;
-            Game1.afterFade += SomeMethod;
+
+            Game1.afterFade += () =>
             {
                 Monitor.Log("➡️ Saliendo al título", LogLevel.Info);
                 Game1.exitToTitle();
