@@ -1,0 +1,17 @@
+{
+  "Name": "AutoSaveOnExit",
+  "Author": "Daniel & Copilot",
+  "Version": "1.0.0",
+  "UniqueID": "Daniel.AutoSaveOnExit",
+  "EntryDll": "AutoSaveOnExit.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": {
+    "SMAPI": ">=4.0.0"
+  },
+  "Description": "Guarda automáticamente la partida al volver al menú principal. Incluye retraso configurable, mensaje en pantalla y atajo F5 para salvado manual.",
+  "ModPage": "https://github.com/GGitCode584/AutoSaveOnExit",
+  "UpdateKeys": [
+    "github:GGitCode584/AutoSaveOnExit"
+  ],
+  "EnableConfigMenu": false
+}
