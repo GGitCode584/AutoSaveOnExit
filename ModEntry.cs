@@ -78,7 +78,7 @@ namespace AutoSaveOnExit
             Monitor.Log("⏳ Fundiendo pantalla para salir al título…", LogLevel.Debug);
             if (!Game1.fadeToBlack)
                 Game1.fadeToBlack = true;
-            Game1.afterFadeFunction = () =>
+            Game1.afterFade += SomeMethod;
             {
                 Monitor.Log("➡️ Saliendo al título", LogLevel.Info);
                 Game1.exitToTitle();
